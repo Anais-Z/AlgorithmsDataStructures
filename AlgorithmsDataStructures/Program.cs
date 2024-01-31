@@ -41,3 +41,41 @@ for(int i = 4; i >=2; i--)
 }
 
 intArray[2] = 8;
+
+
+//Deleting from the end of array
+
+int[] arr = new int[9];
+
+int theLength = 0;
+
+for(int i = 0; i < 6; i++)
+{
+    arr[theLength] = i;
+    theLength++;
+}
+
+//deleting from anywhere in the array
+for(int i = 4; i < theLength; i++)
+{
+    arr[i - 1] = arr[i];
+}
+
+theLength--;
+
+for (int i = 0; i < theLength; i++)
+{
+    Console.WriteLine(arr[i]);
+}
+
+
+//theLength--;
+
+//deleting from beggining of an array
+//for(int i =1; i < theLength; i++)
+//{
+//    arr[i - 1] = arr[i];
+//}
+//theLength--;
+
+
